@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: arial;
+    font-size: 16pt;
+    color: #202020;
+    background-color: #303030;
+}
+
+@media screen and (max-device-width: 5in) {
+    body { font-size: 32pt; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0.2em;
+}
+
+a {
+    color: #00a0f0;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #a000f0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    top: 0;
+    left: 0;
+    background-color: #a000f0;
+    text-align: left;
+    color: #303030;
+}
+
+.main {
+    position: fixed;
+    top: 3em;
+    right: 0;
+    bottom: 2.4em;
+    left: 0;
+    overflow: scroll;
+}
+
+.message-container {
+    width: 50%;
+    padding: 4px;
+    /* border: 2px solid #101010; */
+    border-radius: 6px;
+    margin: 12px;
+    background-color: #f0f0f0;
+}
+@media screen and (max-width: 1024px) {
+    .message-container {
+        width: 80%;
+    }
+}
+.message-container p {
+    margin-left: 1em;
+}
+
+.input-container {
+    position: fixed;
+    width: 100%;
+    height: 2.4em;
+    bottom: 0;
+    background-color: #ffffff;
+}
+
+input {
+    border: none;
+}
+input:focus {
+    outline: none;
+}
+.input-container input[type="text"] {
+    position: absolute;
+    width: 92%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0 1%;
+    font-size: 1em;
+    overflow: scroll;
+}
+.input-container input[type="submit"] {
+    position: absolute;
+    width: 2em;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+header input {
+    position: absolute;
+    height: 1.6em;
+    width: 12em;
+    top: 0.6em;
+    right: 0.6em;
+    font-size: 1em;
+}

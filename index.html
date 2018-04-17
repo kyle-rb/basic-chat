@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>messaging app or whatever</title>
+  <script src="/res/vue.min.js"></script>
+  <script src="/res/frontend.js"></script>
+  <link rel="stylesheet" href="/res/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>messaging app or whatever</h1>
+      <input type="text" v-model="username" placeholder="name">
+    </header>
+    <div class="main">
+      <message v-for="item in messages" v-bind:message="item" v-bind:key="item.id"></message>
+    </div>
+    <div class="input-container">
+      <form v-on:submit.prevent="sendMessage">
+        <input type="text" v-model="inputMessage" placeholder="start shitposting, nerd">
+        <input type="submit" value="&#x1F680;" title="submit!">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
